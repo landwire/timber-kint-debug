@@ -8,7 +8,6 @@
  * Depends: Timber, Kint Debugger
  * */
 defined( 'ABSPATH' ) or die( 'Nope, not accessing this' );
-include 'vendor/autoload.php';
 use Kint;
 class Timber_Kint_Debug {
   function __construct() {
