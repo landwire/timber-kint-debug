@@ -8,7 +8,7 @@
  * Depends: Timber, Kint Debugger
  * */
 defined( 'ABSPATH' ) or die( 'Nope, not accessing this' );
-use Kint;
+
 class Timber_Kint_Debug {
   function __construct() {
     add_filter('get_twig', array($this,'add_to_twig'));
