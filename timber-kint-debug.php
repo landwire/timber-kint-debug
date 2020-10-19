@@ -16,7 +16,7 @@ class Timber_Kint_Debug {
   }
   function add_to_twig($twig) {
     $twig->addExtension(new Twig_Extension_StringLoader());
-    $twig->addFunction(new Twig_SimpleFunction('kint', array($this, 'call_kint'),  array('is_safe' => array('html'), 'needs_context' => true, 'needs_environment' => true) ));
+    $twig->addFunction(new Twig_SimpleFunction('d', array($this, 'call_kint'),  array('is_safe' => array('html'), 'needs_context' => true, 'needs_environment' => true) ));
     return $twig;
   }
   function call_kint($twig, $vars, $context = FALSE) {

@@ -1,6 +1,12 @@
 {
-    "name": "timber-kint-debug/timber-kint-debug",
+    "name": "landwire/timber-kint-debug",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:landwire/kint.git"
+        }
+    ],
     "require": {
-        "kint-php/kint": "^2.2"
+        "landwire/kint": "dev-master"
     }
 }
