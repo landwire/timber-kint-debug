@@ -1,5 +1,6 @@
 {
     "name": "landwire/timber-kint-debug",
+    "type": "wordpress-plugin",
     "repositories": [
         {
             "type": "vcs",
