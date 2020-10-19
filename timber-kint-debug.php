@@ -18,7 +18,7 @@ class Timber_Kint_Debug {
     return $twig;
   }
   function call_kint($twig, $vars, $context = FALSE) {
-    if ($twig->isDebug()) {
+    if ($twig->isDebug() && current_user_can('administrator')) {
       if (!class_exists('Kint')) {
         return 'Kint class doesn\'t exist! You can download it from <a href="https://wordpress.org/plugins/kint-debugger/">https://wordpress.org/plugins/kint-debugger/</a>';
       }
